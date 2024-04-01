@@ -37,14 +37,12 @@ const submitFunc = () => {
   // восстанавливать заполненные поля
 
   window.onload = function () {
-    console.log('ok');
     if (window.localStorage && localStorage.loan_firstName) {
       document.querySelector('.first_name').value = localStorage.loan_firstName;
       document.querySelector('.last_name').value = localStorage.loan_lastName;
       document.querySelector('.email_field').value = localStorage.loan_email;
       document.querySelector('.website_field').value = localStorage.loan_website;
       document.querySelector('.textarea_field').value = localStorage.loan_textField;
-      console.log('2');
     }
   };
 };
